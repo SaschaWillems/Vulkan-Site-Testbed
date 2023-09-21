@@ -5,6 +5,11 @@ git -C "vulkan-tutorial" pull || git clone https://github.com/KhronosGroup/Vulka
 git -C "vulkan-guide" pull || git clone https://github.com/KhronosGroup/Vulkan-Guide.git "vulkan-guide"
 git -C "vulkan-samples" pull || git clone https://github.com/KhronosGroup/Vulkan-Samples.git "vulkan-samples"
 
+cd antora-ui-khronos
+npm install
+gulp bundle
+cd $rwd
+
 cd vulkan-tutorial/antora
 make
 cd $rwd
