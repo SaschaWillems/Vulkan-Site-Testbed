@@ -1,23 +1,20 @@
 site:
-  title: Vulkan Docs Test
-  start_page: vulkan-docs-test::index.adoc
+  title: Vulkan Docs Testbed
+  start_page: tutorial::00_Introduction.adoc
 content:
   sources: 
   - url: vulkan-tutorial
     branches: HEAD
-    start_path: ./
+    start_path: antora
   - url: vulkan-samples
     branches: HEAD
-    start_path: ./
+    start_path: antora
   - url: vulkan-guide
     branches: HEAD
     start_path: antora
-  - url: vulkan-understanding
-    branches: HEAD
-    start_path: ./
-  - url: vulkan-docs-test
-    branches: HEAD
-    start_path: ./    
+  # - url: vulkan-understanding
+  #   branches: HEAD
+  #   start_path: ./
 ui: 
   bundle:
     url: ui-bundle.zip
