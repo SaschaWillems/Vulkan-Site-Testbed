@@ -1,3 +1,5 @@
 = About
 
-Personal testbed with a setup similar to the Vulkan Docs site. Mostly exist to make local testing easier for me.
+Personal testbed with a setup similar to the https://github.com/KhronosGroup/Vulkan-Site[Vulkan Docs site]. Mostly exists to make local testing easier for me.
+
+Contains samples, guide and tutorial. Spec is excluded to make builds as easy as possible.
