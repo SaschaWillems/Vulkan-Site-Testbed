@@ -1,6 +1,6 @@
 site:
   title: Vulkan Docs Testbed
-  start_page: tutorial::00_Introduction.adoc
+  start_page: spec::index.adoc
 content:
   sources: 
   - url: vulkan-tutorial
@@ -12,6 +12,12 @@ content:
   - url: vulkan-guide
     branches: HEAD
     start_path: antora
+  - url: vulkan-docs
+    branches: HEAD
+    start_paths: antora/spec, antora/Features
+  - url: GLSL
+    branches: HEAD
+    start_path: antora    
   # - url: vulkan-understanding
   #   branches: HEAD
   #   start_path: ./
@@ -21,6 +27,9 @@ ui:
     # url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     # snapshot: true
   supplemental_files: ./supplemental-ui
+asciidoc:
+  extensions:
+  - '@asciidoctor/tabs'  
 antora:
   extensions:
   - '@antora/lunr-extension'
